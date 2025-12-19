@@ -1,0 +1,223 @@
+
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+*/
+
+import { WardrobeItem } from './types';
+
+export const defaultWardrobe: WardrobeItem[] = [
+  // --- USER REQUESTED OUTFITS ---
+  {
+    id: 'leather-fur-mini-set',
+    name: 'Black Fur-Trim Leather Set',
+    url: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['edgy', 'leather', 'fur', 'mini-skirt', 'boots']
+  },
+  {
+    id: 'off-shoulder-knit-jeans',
+    name: 'Off-Shoulder Knit & Jeans',
+    url: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['casual', 'knitwear', 'denim', 'fall', 'chic']
+  },
+  {
+    id: 'beige-luxe-fur-coat',
+    name: 'Luxe Fur-Cuff Coat Set',
+    url: 'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=800&q=80',
+    category: 'outerwear',
+    tags: ['luxury', 'beige', 'coat', 'fur', 'evening']
+  },
+  {
+    id: 'wolf-embossed-pants',
+    name: 'Wolf Embossed Knit Pants',
+    url: 'https://images.unsplash.com/photo-1584305116359-1983045307f0?auto=format&fit=crop&w=800&q=80',
+    category: 'bottom',
+    tags: ['creative', 'knit', 'white', 'artistic', 'winter']
+  },
+  {
+    id: 'burgundy-leather-bomber-set',
+    name: 'Burgundy Leather Bomber Set',
+    url: 'https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['streetwear', 'leather', 'burgundy', 'denim', 'rocker']
+  },
+  {
+    id: 'black-tweed-gold-suit',
+    name: 'Black Tweed Gold-Button Suit',
+    url: 'https://images.unsplash.com/photo-1548624149-f7b316ca88f2?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['professional', 'tweed', 'gold', 'classic', 'chic']
+  },
+  {
+    id: 'grey-oversized-lace-knit',
+    name: 'Oversized Grey Lace Sweater',
+    url: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80',
+    category: 'top',
+    tags: ['cozy', 'lace', 'knitwear', 'oversized', 'lifestyle']
+  },
+  {
+    id: 'long-fur-collar-leather',
+    name: 'Fur-Collar Long Leather Coat',
+    url: 'https://images.unsplash.com/photo-1551028919-30164a7ed4af?auto=format&fit=crop&w=800&q=80',
+    category: 'outerwear',
+    tags: ['edgy', 'glam', 'leather', 'fur', 'long-coat']
+  },
+  {
+    id: 'minimalist-black-cami-belt',
+    name: 'Minimalist Black Cami Dress',
+    url: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['basic', 'black', 'mini-dress', 'minimal', 'belted']
+  },
+  {
+    id: 'watercolor-abstract-mini',
+    name: 'Watercolor Abstract Mini',
+    url: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['artistic', 'colorful', 'mini-dress', 'abstract']
+  },
+  {
+    id: 'classic-white-aline',
+    name: 'Classic White A-Line',
+    url: 'https://images.unsplash.com/photo-1518767761162-1593c50a1c28?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['classic', 'white', 'formal', 'clean', 'clutch']
+  },
+  {
+    id: 'tropical-floral-crop-set',
+    name: 'Tropical Floral Crop Set',
+    url: 'https://images.unsplash.com/photo-1583846467084-df9503cc0b5b?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['summer', 'floral', 'white', 'vacation']
+  },
+  {
+    id: 'designer-horsebit-platforms',
+    name: 'Designer Horsebit Platforms',
+    url: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80',
+    category: 'shoes',
+    tags: ['designer', 'gold', 'silver', 'platform', 'luxury']
+  },
+  {
+    id: 'white-lace-stiletto-boots',
+    name: 'White Lace Stiletto Boots',
+    url: 'https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=800&q=80',
+    category: 'shoes',
+    tags: ['lace', 'white', 'stiletto', 'glam', 'boots']
+  },
+  {
+    id: 'white-cowl-chain-top',
+    name: 'White Silk Cowl & Chain Top',
+    url: 'https://images.unsplash.com/photo-1533659828870-95ee305cee3e?auto=format&fit=crop&w=800&q=80',
+    category: 'top',
+    tags: ['silk', 'luxury', 'white', 'glam', 'summer']
+  },
+  {
+    id: 'white-ribbed-bikini-set',
+    name: 'White Ribbed Triangle Bikini',
+    url: 'https://images.unsplash.com/photo-1502301197179-65228ab57f78?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['swim', 'white', 'minimal', 'beach']
+  },
+  {
+    id: 'black-knot-cutout-one-piece',
+    name: 'Black Knot Cutout One-Piece',
+    url: 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['swim', 'black', 'cutout', 'elegant']
+  },
+  {
+    id: 'plaid-quilted-bomber-jacket',
+    name: 'Quilted Plaid Bomber',
+    url: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80',
+    category: 'outerwear',
+    tags: ['casual', 'plaid', 'quilted', 'fall', 'bomber']
+  },
+  {
+    id: 'teal-paisley-ruffle-bikini',
+    name: 'Teal Paisley Ruffle Bikini',
+    url: 'https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['swim', 'paisley', 'teal', 'boho', 'ruffles']
+  },
+  {
+    id: 'pattern-shirt-lace-shorts',
+    name: 'Patterned Shirt & Lace Shorts',
+    url: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['boho', 'lace', 'pattern', 'summer', 'chic']
+  },
+  {
+    id: 'white-bodycon-slit-dress',
+    name: 'White Bodycon Slit Dress',
+    url: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['formal', 'white', 'bodycon', 'minimal', 'sexy']
+  },
+  {
+    id: 'striped-off-shoulder-button-knit',
+    name: 'Striped Button Sweater',
+    url: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=800&q=80',
+    category: 'top',
+    tags: ['casual', 'striped', 'knitwear', 'neutral']
+  },
+  {
+    id: 'intricate-white-lace-blouse',
+    name: 'Intricate White Lace Blouse',
+    url: 'https://images.unsplash.com/photo-1533659828870-95ee305cee3e?auto=format&fit=crop&w=800&q=80',
+    category: 'top',
+    tags: ['lace', 'white', 'vintage', 'feminine', 'detail']
+  },
+  {
+    id: 'biker-jacket-band-tee-set',
+    name: 'Rocker Leather & Band Tee',
+    url: 'https://images.unsplash.com/photo-1551028919-30164a7ed4af?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['edgy', 'rocker', 'leather', 'denim', 'black']
+  },
+  {
+    id: 'navy-yellow-trim-blazer-set',
+    name: 'Navy & Yellow Trim Blazer Set',
+    url: 'https://images.unsplash.com/photo-1548624149-f7b316ca88f2?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['chic', 'navy', 'yellow', 'blazer', 'preppy']
+  },
+  {
+    id: 'studded-leather-mini-skirt',
+    name: 'Studded Edge Leather Mini',
+    url: 'https://images.unsplash.com/photo-1582142407894-ec85a1260a46?auto=format&fit=crop&w=800&q=80',
+    category: 'bottom',
+    tags: ['edgy', 'leather', 'studded', 'black', 'mini']
+  },
+  {
+    id: 'black-lace-bodysuit-lingerie',
+    name: 'Black Lace Bodysuit',
+    url: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['lingerie', 'lace', 'black', 'intimate']
+  },
+  {
+    id: 'cross-wing-laceup-knit-set',
+    name: 'Gothic Cross & Lace-Up Set',
+    url: 'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['gothic', 'white', 'knit', 'lace-up', 'streetwear']
+  },
+
+  // --- EXISTING ITEMS ---
+  {
+    id: 'mosaic-layered-set',
+    name: 'Mosaic Layered Look',
+    url: 'https://images.unsplash.com/photo-1539109132314-347752418b3b?auto=format&fit=crop&w=800&q=80',
+    category: 'custom',
+    tags: ['chic', 'layered', 'mosaic', 'leather', 'sophisticated']
+  },
+  {
+    id: 'gold-geometric-halter',
+    name: 'Gold Geometric Halter',
+    url: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80',
+    category: 'dress',
+    tags: ['glam', 'gold', 'geometric', 'mini-dress', 'party']
+  }
+];
